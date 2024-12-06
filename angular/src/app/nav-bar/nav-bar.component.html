@@ -1,0 +1,91 @@
+<!-- Header -->
+<header class="flex-none">
+    <nav [class.bg-black]="isBlackNavBar"
+      class="flex items-center justify-between p-6 lg:px-8 z-10"
+      aria-label="Global"
+    >
+      <div class="flex lg:flex-1 z-10">
+        <a href="#" class="-m-1.2 p-1.2">
+          <strong
+            ><h1 class="text-lg/8 font-semibold text-white">
+              V-SURE
+            </h1></strong
+          >
+        </a>
+      </div>
+      <div class="flex gap-x-12 z-10">
+        <a *ngIf="isAdminNavBar" routerLink="/register-underwriter" class="text-sm/6 font-semibold text-white">Add Underwriter</a>
+        <a *ngIf="isAdminNavBar" href="#" class="text-sm/6 font-semibold text-white">Delete Underwriter</a>
+        <a *ngIf="isUnderwriterNavBar" routerLink="/add-insurance" class="text-sm/6 font-semibold text-white">Add Insurance</a>
+        <a *ngIf="isUnderwriterNavBar" routerLink="/search" class="text-sm/6 font-semibold text-white">Search Insurance</a>
+        <a *ngIf="isUnderwriterNavBar" routerLink="/viewhistory" class="text-sm/6 font-semibold text-white">View Insurance History</a>
+        <a *ngIf="isUnderwriterNavBar" routerLink="/update-password" class="text-sm/6 font-semibold text-white">Update Password</a>
+        </div>
+      <div class="lg:flex lg:flex-1 lg:justify-end z-10">
+        <a  *ngIf="!isAdminNavBar && !isUnderwriterNavBar"
+        routerLink="/login"
+          class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          >Login
+        </a>
+        <a *ngIf="isAdminNavBar || isUnderwriterNavBar"
+          routerLink="/login"
+          class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          >Logout
+        </a>
+      </div>
+    </nav>
+    <!-- <nav *ngIf="isAdminNavBar" [ngClass] = "isBlackNavBar?'bg-black':''"
+      class="flex items-center justify-between p-6 lg:px-8 z-10"
+      aria-label="Global"
+    >
+      <div class="flex lg:flex-1 z-10">
+        <a href="#" class="-m-1.2 p-1.2">
+          <strong
+            ><h1 class="text-lg/8 font-semibold text-white">
+              Insurance Agency
+            </h1></strong
+          >
+        </a>
+      </div>
+      <div class="flex gap-x-12 z-10">
+          <a href="#" class="text-sm/6 font-semibold text-white">Add Underwriter</a>
+          <a href="#" class="text-sm/6 font-semibold text-white">Delete Underwriter</a>
+          <a routerLink="/search" class="text-sm/6 font-semibold text-white">Search</a>
+          <a href="#" class="text-sm/6 font-semibold text-white">About</a>
+        </div>
+      <div class="lg:flex lg:flex-1 lg:justify-end z-10">
+        <a
+          routerLink="/login"
+          class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          >Logout
+        </a>
+      </div>
+    </nav>
+    <nav *ngIf="isUnderwriterNavBar" [ngClass] = "isBlackNavBar?'bg-black':''"
+      class="flex items-center justify-between p-6 lg:px-8 z-10"
+      aria-label="Global"
+    >
+      <div class="flex lg:flex-1 z-10">
+        <a href="#" class="-m-1.2 p-1.2">
+          <strong
+            ><h1 class="text-lg/8 font-semibold text-white">
+              Insurance Agency
+            </h1></strong
+          >
+        </a>
+      </div>
+      <div class="flex gap-x-12 z-10">
+          <a href="#" class="text-sm/6 font-semibold text-white">Add Insurance</a>
+          <a href="#" class="text-sm/6 font-semibold text-white">Search Insurance</a>
+          <a routerLink="/search" class="text-sm/6 font-semibold text-white">View Insurance History</a>
+          <a href="#" class="text-sm/6 font-semibold text-white">Update Password</a>
+        </div>
+      <div class="lg:flex lg:flex-1 lg:justify-end z-10">
+        <a
+          routerLink="/login"
+          class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          >Logout
+        </a>
+      </div>
+    </nav>
+  </header> -->

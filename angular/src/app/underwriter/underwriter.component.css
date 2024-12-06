@@ -1,0 +1,28 @@
+/* Ensure the page layout fills the entire viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg-img {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Full height of viewport */
+  }
+  
+  main {
+    flex-grow: 1; /* Push the footer to the bottom */
+  }
+  
+  footer {
+    background:transparent; /* Dark gray */
+    padding: 1rem 0;
+    color: white;
+  }
+  .background {
+    background-image: url(../../resources/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
